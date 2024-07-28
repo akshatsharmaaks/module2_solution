@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+.flex {
+    width: 90%;
+    margin: 0 auto;
+}
+.section {
+    position: relative;
+    padding: 40px 20px 20px 20px; /* Extra padding to prevent text overlap with title */
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: grey;
+    color: black;
+}
+.title1 {
+    background-color: palevioletred;
+}
+.title2 {
+    background-color: red;
+    color: white;
+}
+.title3 {
+    background-color: burlywood;
+}
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    border: 1px solid black;
+    width:25%;
+    font-size: 1.25em; /* 25% larger than base text size */
+}
+.content{
+    margin-top: 40px;
+}
+@media (min-width: 992px) {
+    .section {
+        width: 30%;
+        float: left;
+        margin-left: 3.33%;
+    }
+    .section:last-child {
+        margin-right: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .section1, .section2 {
+         width:48%;
+         float:left;
+         margin-right: 4%;
+    }
+    .section2 {
+        margin-right: 0;
+    }
+    .section3 {
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px){
+    .section {
+        width: 100%;
+        float: none;
+    }
+}
